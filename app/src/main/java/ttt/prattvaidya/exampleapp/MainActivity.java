@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,5 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         Log.i("Values",usernameText + " " + passwordEditText.getText().toString());
         Toast.makeText(this, "Welcome " + usernameText, Toast.LENGTH_SHORT).show();
+
+        ImageView img = (ImageView) findViewById(R.id.imageView);
+        img.setImageResource(R.drawable.stairs);
     }
 }
