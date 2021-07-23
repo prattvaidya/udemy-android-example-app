@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Example App</string>
-    <string name="heading">My Great App</string>
+    <string name="hintUsername">Username</string>
+    <string name="hintPassword">Password</string>
 </resources>

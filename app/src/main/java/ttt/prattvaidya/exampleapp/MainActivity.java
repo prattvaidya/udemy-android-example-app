@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +17,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void handleClick(View view) {
         Log.i("Info", "Button pressed");
-        EditText nameEditText = (EditText) findViewById(R.id.nameEditText);
-        Log.i("Values",nameEditText.getText().toString());
+        EditText nameEditText = (EditText) findViewById(R.id.usernameEditText);
+        EditText passwordEditText = (EditText) findViewById(R.id.passwordEditText);
+
+        String usernameText = nameEditText.getText().toString();
+
+        Log.i("Values",usernameText + " " + passwordEditText.getText().toString());
+        Toast.makeText(this, "Welcome " + usernameText, Toast.LENGTH_SHORT).show();
     }
 }
